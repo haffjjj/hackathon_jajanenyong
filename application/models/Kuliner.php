@@ -32,7 +32,7 @@ class Kuliner extends CI_Model {
     public function getkulinerbyid($id){ //mengambil kuliner dengan id
         $this->db->where('id',$id);
         $query = $this->db->get('kuliner',1);
-        return $query->result_array();   
+        return $query->row_array();   
     }
 
     public function getcomentkuliner($id){ // mengambil komentar berdasarkan id kuliner

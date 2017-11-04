@@ -1,0 +1,216 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+.center{
+	width: 1255px;
+	overflow: hidden;
+	margin: auto;
+}
+.clear{
+	float: none;
+	clear: both;
+}
+
+#makanan{
+	padding: 0;
+	margin: 0;
+}
+#makanan .title{
+	font-size: 18px;
+	color: #222;
+	font-weight: bold;
+	text-align: center;
+}
+#makanan .content{
+	width: 1255px;
+	border-radius: 10px;
+	margin: 50px;
+}
+#makanan .list-box{
+	width: 200px;
+	height: 300px;
+	border: 2px solid #444;
+}
+#makanan .img{
+	width: 200px;
+	height: 100px;
+	margin: 0;
+}
+#makanan .text{
+	padding: 0;
+	margin: 0;
+}
+#makanan .text-title{
+	font-size: 12pt;
+	text-align: center;
+	color: #222;
+}
+
+#pesan{
+	padding: 0;
+	margin: 0;
+}
+#pesan .pesan-img{
+	float: left;
+	width: 600px;
+	height: 400px;
+	margin: 20px 0 20px 0;
+}
+#pesan .img{
+	width: 600px;
+	height: 400px;
+}
+#pesan .pesan-detail{
+	width: 625px;
+	float: left;
+	margin-top: 50px;
+	position: relative;
+}
+#pesan .pesan-detail h1{
+	margin: 80px 0 0 50px;
+	font-size: 24px;
+	color: #222;
+	font-weight: normal;
+}
+#pesan .pesan-detail h2{
+	margin: 20px 0 0 50px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #222;
+	float: left;
+}
+#pesan .pesan-detail h3{
+	margin: 20px 0 0 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #aaa;
+	float: left;
+	font-weight: normal;
+}
+#pesan .pesan-bintang{
+	overflow: hidden;
+	width: 150px;
+	margin: 5px 0 0 50px;
+	padding: 5px;
+}
+#pesan .pesan-ranting{
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+#pesan .pesan-line{
+	margin: 10px 0 0 50px;
+	width: 80%;
+	height: 1px;
+	background-color: #ccc;
+}
+#pesan .btn{
+	border-radius: 25px;
+	background-color: #f9a126;
+	right: 50%;
+	margin-right: -88.5px;
+	bottom: -50%;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 25px;
+	position: absolute;
+}
+#pesan .btn:hover{
+	opacity: .8;
+}
+#pesan .toko{
+	padding: 0;
+	margin: 10px 0;
+}
+#pesan .toko-list{
+	float: left;
+	padding: 10px 30px;
+	margin-right: 50px;
+	color: #fff;
+	text-decoration: none;
+}
+#pesan .toko-list:hover{
+	cursor: pointer;
+}
+#pesan span{
+	font-size: 16px;
+	color: #222;
+}
+#pesan h4{
+	font-weight: normal;
+	float: right;
+	font-size: 14px;
+	color: #ef4836;
+	padding-top: 5px;
+}
+#pesan h4:hover{
+	cursor: pointer;
+	opacity: .8;
+}
+#myModal span{
+	font-size: 16px;
+	font-weight: bold;
+	color: #222;
+}
+#myModal table{
+	margin-top: 20px;
+}
+#myModal h1{
+	font-size: 16px;
+	color: #222;
+	padding: 0;
+	margin: 0;
+}
+#myModal button{
+	padding: 10px 25px;
+	background-color: #f9a126;
+	border: none;
+	margin-top: 15px;
+	color: #fff;
+}
+#myModal button:hover{
+	cursor: pointer;
+	opacity: .8;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+

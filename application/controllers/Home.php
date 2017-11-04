@@ -51,7 +51,7 @@ class Home extends CI_Controller {
 	{
 		$d['kuliner_makanan'] = $this->kuliner->getkuliner('makanan');
 		$d['kuliner_minuman'] = $this->kuliner->getkuliner('minuman');
-		$this->load->view('home',$d);
+		$this->load->view('v_home',$d);
 	}
 
 	public function users($id){ //halaman profile users
@@ -72,7 +72,7 @@ class Home extends CI_Controller {
 		$d['kulinerbyid'] = $this->kuliner->getkulinerbyid($id);
 		$d['komentar'] = $this->kuliner->getcomentkuliner($id);
 		$d['penjual'] = $this->kuliner->getpenjualkuliner($id);
-		$this->load->view('getkuliner',$d);
+		$this->load->view('v_kuliner',$d);
 	}
 
 	public function insertkomentar(){
