@@ -7,6 +7,7 @@ class Home extends CI_Controller {
 		parent::__construct();
 		$this->load->model('kuliner');
 		session_start();
+		$_SESSION['users_id'] = 2;
 	}
 
 	public function signin($username,$password){ //halaman login
@@ -57,8 +58,8 @@ class Home extends CI_Controller {
 	public function users($id){ //halaman profile users
 		$users = $this->kuliner->users($id);
 		if($users['level'] == 2){
-			// halaman penjual
-			echo "penjual";
+			var_dump($this->kuliner->getprofile_spesifik($id));
+			$this->load->view('v_penjual.php');
 		}
 		else if($users['level'] == 3){
 			// halaman pembeli
@@ -71,7 +72,16 @@ class Home extends CI_Controller {
 	{
 		$d['kulinerbyid'] = $this->kuliner->getkulinerbyid($id);
 		$d['komentar'] = $this->kuliner->getcomentkuliner($id);
-		$d['penjual'] = $this->kuliner->getpenjualkuliner($id);
+
+		$d['penjual'] = [];
+
+		foreach ($this->kuliner->getpenjualkuliner($id) as $value) {
+			$d['penjual'][] = $this->kuliner->getprofile_spesifik($value['id_users']); // cara ini terlalu membebani server
+		}
+
+		// var_dump($d['penjual']);
+		// var_dump($d['komentar']);
+
 		$this->load->view('v_kuliner',$d);
 	}
 
@@ -80,10 +90,19 @@ class Home extends CI_Controller {
 		$kuliner = $this->input->post('id_kuliner');
 		$komentar = $this->input->post('komentar');
 		$data = [
-			'users' => $users,
-			'kuliner' => $kuliner,
+			'id' => '',
+			'id_kuliner' => $kuliner,
+			'id_users' => $users,
 			'komentar' => $komentar
 		];
+
+		if($this->kuliner->insertkomentar($data)){
+			echo "yo";
+		}
+		else{
+			echo "gagal";
+		}
+		
 	}
 
 	// public function deletekomentar(){

@@ -42,7 +42,7 @@
 			<?php foreach ($kuliner_makanan as $value) { ?>
 
 			<div class="makanan-box">
-				<img src="assets/img/mendoan.jpg" class="img">
+				<img src="assets/img/kuliner/<?php echo $value['gambar_kuliner'] ?>" class="img">
 				<div class="makanan-title"><a href="<?php echo base_url()."home/kuliner/".$value['id'] ?>"><?php echo substr($value['nama'], 0, 15) ?></a></div>
 				<div class="makanan-harga"><?php echo "Rp " . number_format($value['harga_rata'],2,',','.')?></div>
 				<div class="makanan-bintang">
@@ -66,7 +66,7 @@
 			<?php foreach ($kuliner_minuman as $value) { ?>
 
 			<div class="makanan-box">
-				<img src="assets/img/mendoan.jpg" class="img">
+				<img src="assets/img/kuliner/<?php echo $value['gambar_kuliner'] ?>" class="img">
 				<div class="makanan-title"><a href="<?php echo base_url()."home/kuliner/".$value['id'] ?>"><?php echo substr($value['nama'], 0, 15) ?></a></div>
 				<div class="makanan-harga"><?php echo "Rp " . number_format($value['harga_rata'],2,',','.')?></div>
 				<div class="makanan-bintang">

@@ -18,7 +18,7 @@ body{
 	margin: 0;
 }
 #makanan .title{
-	font-size: 18px;
+	font-size: 14pt;
 	color: #222;
 	font-weight: bold;
 	text-align: center;
@@ -70,20 +70,20 @@ body{
 }
 #pesan .pesan-detail h1{
 	margin: 80px 0 0 50px;
-	font-size: 24px;
+	font-size: 18pt;
 	color: #222;
 	font-weight: normal;
 }
 #pesan .pesan-detail h2{
 	margin: 20px 0 0 50px;
-	font-size: 28px;
+	font-size: 20pt;
 	font-weight: bold;
 	color: #222;
 	float: left;
 }
 #pesan .pesan-detail h3{
 	margin: 20px 0 0 20px;
-	font-size: 14px;
+	font-size: 10pt;
 	font-weight: bold;
 	color: #aaa;
 	float: left;
@@ -130,27 +130,33 @@ body{
 	margin-right: 50px;
 	color: #fff;
 	text-decoration: none;
+	border-radius:5px;
 }
 #pesan .toko-list:hover{
 	cursor: pointer;
+	
+}
+#pesan .line{
+	height: 1px;
+	margin: 20px;
+	background-color: #ccc;
 }
 #pesan span{
-	font-size: 16px;
+	font-size: 12pt;
 	color: #222;
 }
 #pesan h4{
 	font-weight: normal;
 	float: right;
-	font-size: 14px;
+	font-size: 12pt;
 	color: #ef4836;
-	padding-top: 5px;
 }
 #pesan h4:hover{
 	cursor: pointer;
 	opacity: .8;
 }
 #myModal span{
-	font-size: 16px;
+	font-size: 14pt;
 	font-weight: bold;
 	color: #222;
 }
@@ -169,6 +175,7 @@ body{
 	border: none;
 	margin-top: 15px;
 	color: #fff;
+	font-size: 12pt;
 }
 #myModal button:hover{
 	cursor: pointer;
@@ -214,3 +221,228 @@ body{
     cursor: pointer;
 }
 
+#detail{
+	padding: 0;
+	margin: 0;
+}
+#detail .center{
+	background-color: #f4f4f4;
+	border-radius: 5px;
+}
+#detail .title{
+	font-weight: bold;
+	font-size: 18pt;
+	color: #222;
+	text-align: center;
+	margin-top: 25px;
+}
+#detail .line{
+	width: 150px;
+	height: 2px;
+	background-color: #e1e1e1;
+	margin: 10px auto;
+}
+#detail .detail-img{
+	width: 605px;
+	height: 400px;
+	margin-top: 50px;
+	float: left;
+}
+#detail .img{
+	width: 605px;
+	height: 400px;
+}
+#detail .deskripsi{
+	float: left;
+    width: 900px;
+    min-height: 215px;
+    margin-top: 50px;
+    /* padding-bottom: 20px; */
+}
+#detail .bahan{
+	float: left;
+	width: 300px;
+	height: 400px;
+	margin: 50px 0 0 50px;
+	line-height: 24px;
+	color: #333;
+}
+#detail .bahan-title{
+	font-size: 20px;
+	padding: 20px;
+	color: #222;
+}
+#detail .deskripsi p{
+	margin: 20px;
+	font-size: 14px;
+	color: #222;
+	padding: 0;
+	line-height: 24px;
+}
+#detail .komentar{
+	border: 1px solid rgba(0,0,0,.2);
+	padding: 20px;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: white;
+	margin-bottom: 30px
+}
+#detail .komentar-img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	float: left;
+}
+#detail .imgK{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+#detail .komentar-text{
+	float: left;
+	margin-left: 20px;
+	padding: 5px 15px;
+	border-radius: 5px;
+	max-width: 650px;	
+	color: #222;
+	font-size: 12pt;
+}
+#detail .komentar-text p{
+	margin: 0;
+	padding: 5px 20px;
+	font-size: 12pt;
+}
+#detail .komentar-text span{
+	color: #777;
+	font-size: 10pt;
+	margin-left: 20px;
+}
+#detail .deskripsi h1{
+	font-size: 14pt;
+	color: #444;
+	margin-left: 20px;
+}
+#detail .tambah-komentar{
+	margin-top: 50px;
+	padding: 0;
+	clear: both;
+}
+#detail .tambah-komentar h2{
+	font-size: 14pt;
+	color: #222;
+	margin-left: 20px;
+}
+#detail .input-komentar{
+	padding: 10px 20px;
+	margin: 20px;
+	width: 97%;
+	resize: none;
+	border-radius:5px;
+}
+#detail .submit{
+	padding: 5px 15px;
+	width: 100px;
+	background-color: #f9a126;
+	border-radius: 10px;
+	margin-left: 20px;
+	border: none;
+	color: #fff;
+}
+
+#toko{
+	padding: 0;
+	margin: 0;
+}
+#toko .bg{
+	width: 100%;
+	height: 400px;
+}
+#toko .bg .img{
+	width: 100%;
+	height: 400px;
+}
+#toko .tentang{
+	width: 100%;
+	height: 100px;
+	background-color: #f4f4f4;
+	border-bottom: 2px solid #ccc;
+}
+#toko .tentang h1{
+	font-size: 16pt;
+	margin-left: 150px;
+	color: #222;
+}
+#toko .tentang h2{
+	font-size: 10pt;
+	font-weight: normal;
+	color: #aaa;
+	margin-left: 150px;
+}
+#toko .title{
+	float: left;
+}
+#toko .pemilik{
+	float: right;
+	font-size: 16pt;
+	color: #222;
+	margin: 30px 150px 0 0;
+}
+#toko .produk-list{
+	width: 990px;
+	margin: 50px auto;
+	margin-bottom: 0;
+}
+#toko .produk-box{
+	width: 170px;
+	overflow: hidden;
+	min-height: 240px;
+	margin: 10px;
+	padding-top: 20px;
+	margin-top: 0;
+	text-align: center;
+	float: left;
+	border: 1px solid #e1e1e1;
+	border-radius: 5px;
+}
+#toko .produk-box .img{
+	width: 125px;
+	height: 125px;
+	margin: auto;	
+}
+#toko .produk-title{
+	margin-top: 50px;
+	font-size: 16pt;
+	padding: 15px;
+	color: #222;
+	text-align: center;
+	font-weight: bold;
+}
+#toko .produk-harga{
+	font-size: 12pt;
+	font-weight: bold;
+	color: #ed653b;
+}
+#toko .produk-bintang{
+	width: 150px;
+	margin: auto;
+	padding: 5px;
+}
+#toko .produk-ranting{
+	width: 15px;
+	height: 15px;
+}
+#toko .produkKhas-title{
+	font-size: 18pt;
+	font-weight: bold;
+	color: #222;
+	text-align: center;
+	margin-top: 50px;
+}
+#toko .line{
+	width: 350px;
+	height: 3px;
+	background-color: #444;
+	margin: auto;
+	margin-top: 5px;
+}

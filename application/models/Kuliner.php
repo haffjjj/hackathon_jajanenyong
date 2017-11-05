@@ -46,6 +46,12 @@ class Kuliner extends CI_Model {
         $query = $this->db->get('penjual_kuliner');
         return $query->result_array();
     }
+    
+    public function getprofile_spesifik($id){
+        $this->db->where('id_users',$id);
+        $query = $this->db->get('users_spesifik');
+        return $query->result_array();
+    }
 
     public function getrowskuliner($kuliner){ // mendapatkan jumlah kuliner makanan/minuman
         $this->db->where('kategori',$kuliner);
